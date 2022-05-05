@@ -168,8 +168,8 @@ export default {
         let userlist=msg.userlist;
         let chatmessagelist=msg.chatmessagelist;
         //alert(userlist[0].username);
-        store.commit("setData", {userName:username,img:img,name:name,userList:userlist,chatMessageList:chatmessagelist});
-        store.commit("setWS",{});
+        store.commit("setData", {userName:username,img:img,name:name,userList:userlist,chatMessageList:chatmessagelist,that:this});
+        store.commit("setWS",{that:this});
       })
     }
   },
